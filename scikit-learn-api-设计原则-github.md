@@ -1,8 +1,9 @@
 <p align="center"><b>Scikit-Learn Design</b></p>
+
 Scikit-Learn's API is remarkably well designed. The **main design principles** are:
 
 
-1. **Consistency**:
+:one: **Consistency**:
 
 All objects share a consistent and simple interface:
 
@@ -12,18 +13,18 @@ All objects share a consistent and simple interface:
 
   + **Predictors**. Finally, some estimators are capable of making predictions given a dataset; they are called *predictors*. A predictor has a `predict()` method that takes a dataset of new instances and returns a dataset of corresponding predictions. It also have a `score()` method that measures the quality of the predictions given a test set.
 
-2. **Inspection**
+:two: **Inspection**
 
  **All the esitmator's hyperparameters are accessible directly via public instance variables** (e.g., `imputer.strategy`), and **all the estimator's learned parameters are also accessible via public instance variable with an underscore suffix**(e.g., `imputer.statistics_`).
 
-3. **Nonproliferation of classes**
+:three: **Nonproliferation of classes**
 
 Dataset are represented as NumPy arrays or SciPy sparse matrices, instead of homemade classes. Hypterparameters are just regular Python strings or numbers.
 
-4. **Composition**
+:four: **Composition**
 
 Existing building blocks are reused as much as possible. For example, it's easy to create a `Pipeline` estimator from an arbitrary sequence of tranformers followed by a final estimator.
 
-5. **Sensible defaults**
+:five: **Sensible defaults**
 
 Sklearn provides reasonable default values for most parameters, making it easy to create a baseline working system quickly.
