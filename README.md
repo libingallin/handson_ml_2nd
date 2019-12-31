@@ -1,8 +1,8 @@
 # :books: Hands on Machine Learning with Scikit-Learn, Keras and TensorFlow
 
-[![Python version](https://img.shields.io/badge/Python-3.6.9-blue)](https://www.python.org/downloads/release/python-369/) [![tensorflow version](https://img.shields.io/badge/TensorFlow-2.0.0-blue)](https://www.tensorflow.org/)
+[![Python version](https://img.shields.io/badge/Python-3.6.9-blue)](https://www.python.org/downloads/release/python-369/) [![tensorflow version](https://img.shields.io/badge/TensorFlow-2.0.0-blue)](https://www.tensorflow.org/)  [![keras version](https://img.shields.io/badge/Keras-2.2.4--tf-blue)](https://www.tensorflow.org/api_docs/python/tf/keras)
 
-<br>
+> **2.2.4-tf** is the version of the Keras API implemented by `tf.keras`. Note that it ends with **-tf**, highlighting the fact that `tf.keras` implements the Keras API, plus some extra TensorFlow-specific features.
 
 ## :balloon: Content
 
