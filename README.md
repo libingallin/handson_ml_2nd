@@ -4,6 +4,12 @@
 
 > **2.2.4-tf** is the version of the Keras API implemented by `tf.keras`. Note that it ends with **-tf**, highlighting the fact that `tf.keras` implements the Keras API, plus some extra TensorFlow-specific features.
 
+
+About the book:
++ [O'Reilly book](https://www.amazon.com/-/zh/dp/1492032646/ref=sr_1_1?__mk_zh_CN=%E4%BA%9A%E9%A9%AC%E9%80%8A%E7%BD%91%E7%AB%99&crid=39GEU93HMI8Z0&keywords=hands+on+machine+learning&qid=1577780077&sprefix=hands+on+ma%2Caps%2C376&sr=8-1)
++ [Github repo](https://github.com/ageron/handson-ml2)
+
+
 ## :balloon: Content
 
 ### I. The Fundamentals of Machine Learning
@@ -30,3 +36,4 @@
 17. Representation Learning and Generative Learning Using Autoencoders and GANS
 18. Reinforcement Learning
 19. Training and Deploying TensorFlow Models at Scale
+
