@@ -1,4 +1,4 @@
-# :books: Hands on Machine Learning with Scikit-Learn, Keras and TensorFlow
+# :books: Hands on Machine Learning with Scikit-Learn, Keras and TensorFlow, 2nd edition
 
 [![Python version](https://img.shields.io/badge/Python-3.6.9-blue)](https://www.python.org/downloads/release/python-369/) [![tensorflow version](https://img.shields.io/badge/TensorFlow-2.0.0-blue)](https://www.tensorflow.org/)  [![keras version](https://img.shields.io/badge/Keras-2.2.4--tf-blue)](https://www.tensorflow.org/api_docs/python/tf/keras)
 
