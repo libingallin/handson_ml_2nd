@@ -26,14 +26,14 @@ About the book:
 
 ### II. Neural Networks and Deep Learning
 
-10. Introduction to Artificial Neural Networks with Keras (2019-12-31 Tue.)
-11. Training Deep Neural Networks (2020-01-01 Wed. AM)
-12. Custom Models and Training with TensorFlow (2020-01-01 Wed.)
-13. Loading and Preprocessing Data with TensorFlow (2020-01-02 Thu.)
-14. Deep Computer Vision Using Convolutional Neural Networks (TBD)
-15. Processing Sequences Using RNNs and CNNs (2020-01-03 Fri.)
-16. Natural Language Processing with RNNs and Attention (2020-01-04 Sat.)
-17. Representation Learning and Generative Learning Using Autoencoders and GANS (2020-01-05 Sun.)
-18. Reinforcement Learning (TBD)
-19. Training and Deploying TensorFlow Models at Scale (2020-01-06 Mon.)
+10. Introduction to Artificial Neural Networks with Keras **(2019-12-31 Tue.)**
+11. Training Deep Neural Networks **(2020-01-01 Wed. AM)**
+12. Custom Models and Training with TensorFlow **(2020-01-01 Wed.)**
+13. Loading and Preprocessing Data with TensorFlow **(2020-01-02 Thu.)**
+14. Deep Computer Vision Using Convolutional Neural Networks **(TBD)**
+15. Processing Sequences Using RNNs and CNNs **(2020-01-03 Fri.)**
+16. Natural Language Processing with RNNs and Attention **(2020-01-04 Sat.)**
+17. Representation Learning and Generative Learning Using Autoencoders and GANS **(2020-01-05 Sun.)**
+18. Reinforcement Learning **(TBD)**
+19. Training and Deploying TensorFlow Models at Scale **(2020-01-06 Mon.)**
 
