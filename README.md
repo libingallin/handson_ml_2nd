@@ -6,8 +6,8 @@
 
 
 About the book:
-+ [O'Reilly book](https://www.amazon.com/-/zh/dp/1492032646/ref=sr_1_1?__mk_zh_CN=%E4%BA%9A%E9%A9%AC%E9%80%8A%E7%BD%91%E7%AB%99&crid=39GEU93HMI8Z0&keywords=hands+on+machine+learning&qid=1577780077&sprefix=hands+on+ma%2Caps%2C376&sr=8-1)
-+ [Github repo](https://github.com/ageron/handson-ml2)
++ [Aurélien Géron's O'Reilly book](https://www.amazon.com/-/zh/dp/1492032646/ref=sr_1_1?__mk_zh_CN=%E4%BA%9A%E9%A9%AC%E9%80%8A%E7%BD%91%E7%AB%99&crid=39GEU93HMI8Z0&keywords=hands+on+machine+learning&qid=1577780077&sprefix=hands+on+ma%2Caps%2C376&sr=8-1)
++ [Aurélien Géron's github repo](https://github.com/ageron/handson-ml2)
 
 
 ## :balloon: Content
