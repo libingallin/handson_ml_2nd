@@ -101,6 +101,7 @@ There has plenty of unlabeled instances, and few labeled instances. Some algorit
 ![semi-supervised-learning](./figs/chap01-figs/semi-supervised-learning.png)
 
 <p align="center">Semisupervised learning with two classes (triangles and squares): the unlabeled examples (circles) help classify a new instance (the cross) into the triangle class rather than the square class, even though it is closer to the labeled squares</p>
+
 **Most semisupervised learning algorithms are combinations of unsupervised and supervised algorithms**. For example, *deep belief networks* (DBNs) are based on unsupervised components called *restricted Boltzmann machines* (RBMs) stacked on top of one another. RBMs are trained sequentially in an unsupervised manner, and then the whole system is fine-tuned using supervised learning techniques.
     
 
@@ -113,6 +114,7 @@ A policy defines what action the agent should choose when it is in a given situa
 ![reinforcement-learning](./figs/chap01-figs/reinforcement-learning.png)
 
 <p align="center">Reinforcement Learning</p>
+
 ## 3.2 Batch and Online Learning
 
 Another criterion used to classify Machine Learning systems is whether or not the system can learn incrementally from a stream of incoming data.
