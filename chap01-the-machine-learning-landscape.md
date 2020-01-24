@@ -26,17 +26,25 @@ ML is the science (and art) of programming computers so they can learn from data
 
 ![The traditioanl approach](./figs/chap01-figs/traditional-program.png)
 
-<center>The traditional approach</center>      
+<p align="center">The traditional approach</p>
+
 ![The ML approach](./figs/chap01-figs/ml-program.png)
 
-<center>The ML approach</center>
+<p align="center">The ML approach</p>
+
 ![ml-automatically-adapting-to-change](./figs/chap01-figs/ml-automatically-adapting-to-change.png)
 
-<center>Automatically adapting to change</center>
+
+<p align="center">Automatically adapting to change</p>
+
+
 ![ml-can-help-humans-learn](./figs/chap01-figs/ml-can-help-humans-learn.png)
 
-<center>ML can help humans learn</center>
+<p align="center">ML can help humans learn</p>
+
+
 <br>
+
 # 3 Types of ML systems
 
 -   Whether or not they are trained with human supervision (supervised, unsupervised, semisupervised, and Reinforcement Learning).
@@ -53,6 +61,8 @@ The training set you feed to the algorithm includes the desired solutions, calle
 
 ![supervised-learning-example](./figs/chap01-figs/supervised-learning-example.png)
 
+<p align="center">Supervised Learning (classification)</p>
+
 
 - classification
 - regression
@@ -65,7 +75,8 @@ The training set is unlabeled.
     
 ![dataset-for-unsupervised-learning](./figs/chap01-figs/dataset-for-unsupervised-learning.png)
 
-<center>Dataset for Unsupervised Learning</center>
+<p align="center">Dataset for Unsupervised Learning</p>
+
 
 -   Clustering: detect groups
     -   K-Means
@@ -95,7 +106,8 @@ There has plenty of unlabeled instances, and few labeled instances. Some algorit
 
 ![semi-supervised-learning](./figs/chap01-figs/semi-supervised-learning.png)
 
-<center>Semisupervised learning with two classes (triangles and squares): the unlabeled examples (circles) help classify a new instance (the cross) into the triangle class rather than the square class, even though it is closer to the labeled squares</center>
+<p align="center">Semisupervised learning with two classes (triangles and squares): the unlabeled examples (circles) help classify a new instance (the cross) into the triangle class rather than the square class, even though it is closer to the labeled squares</p>
+
 **Most semisupervised learning algorithms are combinations of unsupervised and supervised algorithms**. For example, *deep belief networks* (DBNs) are based on unsupervised components called *restricted Boltzmann machines* (RBMs) stacked on top of one another. RBMs are trained sequentially in an unsupervised manner, and then the whole system is fine-tuned using supervised learning techniques.
     
 
@@ -107,7 +119,8 @@ A policy defines what action the agent should choose when it is in a given situa
 
 ![reinforcement-learning](./figs/chap01-figs/reinforcement-learning.png)
 
-<center>Reinforcement Learning</center>
+<p align="center">Reinforcement Learning</p>
+
 ## 3.2 Batch and Online Learning
 
 Another criterion used to classify Machine Learning systems is whether or not the system can learn incrementally from a stream of incoming data.
