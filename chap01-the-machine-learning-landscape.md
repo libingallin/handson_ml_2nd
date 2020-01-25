@@ -25,6 +25,10 @@
         -   [Overfitting](#421-overfitting-the-training-data)
         -   [Underfitting](#422-underfitting-the-training-data)
 
+5.  [Testing and validating](#5-testing-and-validating)
+    -   [Data mismatch](#51-data-mismatch)
+    -   [No free lunch (NFL)](#52-no-free-lunch-nfl-theorem)
+
 # 1. What is Machine Learning?
 
 ML is the science (and art) of programming computers so they can learn from data.
