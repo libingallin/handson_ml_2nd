@@ -18,7 +18,12 @@
 4.  [Main challenges of ML](#4-main-challenges-of-ml)
     -   [Bad data](#41-bad-data)
         -   [Insufficient quantity of training data](#411-insufficient-quantity-of-training-data)
-        -   
+        -   [Nonrepresentative training data](#412-nonrepresentative-training-data)
+        -   [Poor quality data](#413-poor-quality-data)
+        -   [Irrelevant features](#414-irrelevant-features)
+    -   [Bad algorithms](#42-bad-algorithms)
+        -   [Overfitting](#421-overfitting-the-training-data)
+        -   [Underfitting](#422-underfitting-the-training-data)
 
 # 1. What is Machine Learning?
 
@@ -47,18 +52,17 @@ ML is the science (and art) of programming computers so they can learn from data
 
 
 ![The traditioanl approach](./figs/chap01-figs/traditional-program.png)
-
 <p align="center">The traditional approach</p>
+
 ![The ML approach](./figs/chap01-figs/ml-program.png)
-
 <p align="center">The ML approach</p>
+
 ![ml-automatically-adapting-to-change](./figs/chap01-figs/ml-automatically-adapting-to-change.png)
-
-
 <p align="center">Automatically adapting to change</p>
-![ml-can-help-humans-learn](./figs/chap01-figs/ml-can-help-humans-learn.png)
 
+![ml-can-help-humans-learn](./figs/chap01-figs/ml-can-help-humans-learn.png)
 <p align="center">ML can help humans learn</p>
+
 [Back to top :arrow_up:](#main-contents)
 
 # 3. Types of ML systems
@@ -76,8 +80,8 @@ Machine Learning systems can be classified according to the amount and type of s
 The training set you feed to the algorithm includes the desired solutions, called *labels*.
 
 ![supervised-learning-example](./figs/chap01-figs/supervised-learning-example.png)
-
 <p align="center">Supervised Learning (classification)</p>
+
 - classification
 - regression
 
@@ -88,8 +92,8 @@ The training set you feed to the algorithm includes the desired solutions, calle
 The training set is unlabeled.
     
 ![dataset-for-unsupervised-learning](./figs/chap01-figs/dataset-for-unsupervised-learning.png)
-
 <p align="center">Dataset for Unsupervised Learning</p>
+
 -   Clustering: detect groups
     -   K-Means
     -   DBSCAN
@@ -117,8 +121,8 @@ The training set is unlabeled.
 There has plenty of unlabeled instances, and few labeled instances. Some algorithms can deal with data that’s partially labeled. This is called *semisupervised learning*.
 
 ![semi-supervised-learning](./figs/chap01-figs/semi-supervised-learning.png)
-
 <p align="center">Semisupervised learning with two classes (triangles and squares): the unlabeled examples (circles) help classify a new instance (the cross) into the triangle class rather than the square class, even though it is closer to the labeled squares</p>
+
 **Most semisupervised learning algorithms are combinations of unsupervised and supervised algorithms**. For example, *deep belief networks* (DBNs) are based on unsupervised components called *restricted Boltzmann machines* (RBMs) stacked on top of one another. RBMs are trained sequentially in an unsupervised manner, and then the whole system is fine-tuned using supervised learning techniques.
 
 ### 3.1.4 Reinforcement Learning
@@ -128,8 +132,8 @@ The learning system, called an *agent* in this context, can observe the environm
 A policy defines what action the agent should choose when it is in a given situation.
 
 ![reinforcement-learning](./figs/chap01-figs/reinforcement-learning.png)
-
 <p align="center">Reinforcement Learning</p>
+
 [Back to top :arrow_up:](#main-contents)
 
 ## 3.2 Batch and Online Learning
@@ -155,8 +159,8 @@ A better option in all these cases is to use algorithms that are capable of lear
 In *online learning*, you train the system **incrementally by feeding it data instances sequentially, either individually or in small groups called *mini-batches***. Each learning step is fast and cheap, so the system can learn about new data on the fly, as it arrives.
 
 ![online learning](./figs/chap01-figs/online-learning.png)
-
 <p align="center">In online learning, a model is trained and launched into production, and then it keeps learning as new data comes in</p>
+
 +   Online learning is great for systems that receive data as a continuous flow (e.g., stock prices) and need to adapt to change rapidly or autonomously (独立地). 
 +    It is also a good option **if you have limited computing resources**: once an online learning system has learned about new data instances, it does not need them anymore, so you can discard them (unless you want to be able to roll back to a previous state and “replay” the data). This can save a huge amount of space.
 +   Online learning algorithms can also be used to **train systems on huge datasets** that cannot fit in one machine’s main memory (this is called **out-of-core learning**). The algorithm loads part of the data, runs a training step on that data, and repeats the process until it has run on all of the data.
@@ -164,8 +168,8 @@ In *online learning*, you train the system **incrementally by feeding it data in
 >   **Out-of-core learning** is usually done offline (i.e., not on the live system), so online learning can be a confusing name. Think of it as incremental learning.
 
 ![use-online-learning-to-handle-huge-datasets](./figs/chap01-figs/use-online-learning-to-handle-huge-datasets.png)
-
 <p align="center">Using online learning to handle huge datasets</p>
+
 **One important parameter of online learning systems** is how fast they should adapt to changing data: this is called the **learning rate**. If you *set a high learning rate*, then your system will rapidly adapt to new data, but it will also tend to quickly forget the old data (you don’t want a spam filter to flag only the latest kinds of spam it was shown). Conversely, if you *set a low learning rate*, the system will have more inertia (惰性、惯性); that is, it will learn more slowly, but it will also be less sensitive to noise in the new data or to sequences of nonrepresentative data points (outliers).
 
 **A big challenge with online learning is that if bad data is fed to the system, the system’s performance will gradually decline**. To reduce this risk, you
@@ -184,15 +188,15 @@ One more way to categorize Machine Learning systems is by how they *generalize*.
 The system learns the examples by heart, then generalizes to new cases by using a similarity measure to compare them to the learned examples (or a subset of them).
 
 ![instance-based-learning](./figs/chap01-figs/instance-based-learning.png)
-
 <p align="center">Instance-based learning</p>
+
 ### 3.3.2 Model-based Learning
 
 Another way to generalize from a set of examples is to build a model of these examples and then use that model to make *predictions*. This is called *model-based learning*.
 
 ![model-based-learning](./figs/chap01-figs/model-based-learning.png)
-
 <p align="center">Model-based learning</p>
+
 [Back to top :arrow_up:](#main-contents)
 
 # 4. Main challenges of ML
@@ -208,8 +212,8 @@ Since the main task is to select a learning algorithm and train it on some data,
 [Microsoft 2001 paper](https://homl.info/6) showed that very different ML algorithms, including fairly simple ones, performed almost identically well on a complex problem of natural language disambiguation once they were given enough data.
 
 ![the-importance-of-data-vs-algorithm](./figs/chap01-figs/the-importance-of-data-vs-algorithm.png)
-
 <p align="center">The importance of data v.s. algorithm</p>
+
 These results suggest that we may want to reconsider the trade-off between spending time and money on algorithm development v.s. spending it on corpus development.
 
 [2009 paper](https://homl.info/7) showed that, however, that **small- and medium-sized datasets are still very common, and it is not always easy or cheap to get extra training data⁠—so don’t abandon algorithms just yet**.
@@ -239,7 +243,7 @@ ML system will only be capable of learning if the training data contains enough 
 
 [Back to top :arrow_up:](#main-contents)
 
-## 4.2 Bad algoithms
+## 4.2 Bad algorithms
 
 ### 4.2.1 Overfitting the training data
 
@@ -290,3 +294,5 @@ One solution is to hold out some of the training data in yet another set that An
 If you make absolutely no assumption about the data, then there is no reason to prefer one model over any other.
 
 There is no model that is *a priori* guaranteed to work better (hence the name of the theorem). The only way to know for sure which model is best is to evaluate them all. Since this is not possible, in practice you make some reasonable assumptions about the data and evaluate only a few reasonable models.
+
+[Back to top :arrow_up:](#main-contents)
