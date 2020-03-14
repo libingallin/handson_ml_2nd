@@ -19,7 +19,7 @@ About the book:
 03. [Classification](https://nbviewer.jupyter.org/github/libingallin/hands-on-machine-learning-with-scikit-learn-keras-tensorflow-2nd/blob/master/chap03-classification.ipynb)
 04. Training Models
 05. Support Vector Machines
-06. Decision Trees
+06. [Decision Trees](https://nbviewer.jupyter.org/github/libingallin/hands-on-machine-learning-with-scikit-learn-keras-tensorflow-2nd/blob/master/chap06-decision-trees.ipynb)
 07. Ensemble Learning and Random Forests
 08. Dimensionaity Reduction
 09. Unsupervised Learning Techniques
