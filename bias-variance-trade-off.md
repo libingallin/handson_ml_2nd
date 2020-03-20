@@ -1,6 +1,6 @@
 # The Bias/Variance Trade-off
 
-An important theoretical result of statistics and ML is the fact **a model's generalization error can be expressed as the sum of 3 very different errors:
+An important theoretical result of statistics and ML is the fact **a model's generalization error can be expressed as the sum of 3 very different errors**:
 
 ## :one: Error 1: Bias
 
@@ -20,7 +20,9 @@ This part is **due to the model's excessive** (过高的/过分的) **sensitivit
 
 ## :three: Error 3: Irreducible error
 
-This part is due to the noisiness of the data itself. The only way to reduce this error is to clean up the data. Like:
+This part is **due to the noisiness of the data itself**.
+
+The **only way to reduce this error is to clean up the data.** Like:
 
 -   Fix the data sources, such as broken sensors;
 -   Detect and remove outliers.
