@@ -20,7 +20,7 @@ About the book:
 04. Training Models
 05. Support Vector Machines
 06. [Decision Trees](https://nbviewer.jupyter.org/github/libingallin/hands-on-machine-learning-with-scikit-learn-keras-tensorflow-2nd/blob/master/chap06-decision-trees.ipynb) -- [Exercise](https://nbviewer.jupyter.org/github/libingallin/hands-on-machine-learning-with-scikit-learn-keras-tensorflow-2nd/blob/master/exercises/chap06-exercise-decision-trees.ipynb)
-07. [Ensemble Learning and Random Forests](https://nbviewer.jupyter.org/github/libingallin/hands-on-machine-learning-with-scikit-learn-keras-tensorflow-2nd/blob/master/chap07-ensemble-learninig.ipynb)
+07. [Ensemble Learning and Random Forests](https://nbviewer.jupyter.org/github/libingallin/hands-on-machine-learning-with-scikit-learn-keras-tensorflow-2nd/blob/master/chap07-ensemble-learninig.ipynb) -- [Exercise](https://nbviewer.jupyter.org/github/libingallin/hands-on-machine-learning-with-scikit-learn-keras-tensorflow-2nd/blob/master/exercises/chap07-exercise-ensemble.ipynb)
 08. Dimensionaity Reduction
 09. Unsupervised Learning Techniques
 
