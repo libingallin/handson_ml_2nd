@@ -7,7 +7,7 @@
 
 本章还有以下内容：
 
-- [Introduction to TensorFlow]()
+- [Introduction to TensorFlow](TensorFlow简介.md)
 - [Use TensorFlow like NumPy]()
 - [Customize models and training algorithms]()
 - [TensorFlow functions and graphs]()
