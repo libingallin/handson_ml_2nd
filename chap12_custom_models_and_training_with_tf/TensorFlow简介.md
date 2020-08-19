@@ -1,5 +1,7 @@
 TensorFlow 是一个用于 numerical computation 的 powerful library，特别适合于大规模的（large-scale）机器学习（当然可以用来处理需要 heavy computation 的所有事）。
 
+<br>
+
 TensorFlow 提供了：
 
 - 核心（core）与 NumPy 特别相似，但是支持 GPU
@@ -21,6 +23,8 @@ TensorFlow 在这些 core features 基础上，提供更多的其他 features，
 
 ![TensorFlow's Python API](chap12-figs/tf_python_api.png)
 
+<br>
+
 在最底层（lowest level），每个 TensorFlow 操作（operation, op）都是用 C++ 写的。
 
 很多 op 都有多种实现，称为 **kernel**。每一种 kernel 用于特定的设备类型——CPU、GPU 和 TPU（tensor processing units）。
@@ -34,7 +38,7 @@ TensorFlow 的结构如下图所示。
 
 ![TensorFlow's architecutre](chap12-figs/tf_architecture.png)
 
-
+<br>
 
 TensorFlow 不仅仅只是一个 library。TensorFlow 是 extensive ecosystem of libraries 的 center。
 
@@ -43,7 +47,7 @@ TensorFlow 不仅仅只是一个 library。TensorFlow 是 extensive ecosystem of
 - TensorFlow Hub：可以方便地下载和 reuse 预训练模型
 - [TensorFlow model garden](https://github.com/tensorflow/models/)：可以获取很多神经网络结构，其中部分已经预训练了。
 - 在 [TensorFlow Resources](https://www.tensorflow.org/resources) 和[这里](https://github.com/jtoy/awesome-tensorflow)可以找到很多 TensorFlow 项目。
-- 越来越多的 ML 论文在发表的时候会公开代码，在[这里](https://paperswithcode.com/)可以找到。
+- 越来越多的 ML 论文在发表的时候会公开代码，在[这里](https://paperswithcode.com/)可以搜索。
 
 
 
