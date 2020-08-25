@@ -42,4 +42,6 @@ off the shelf，**Data API 可读取的数据源有：**
 
 3.  [如何创建自定义 preprocessing layers 和使用 keras 提供的 preprocessing layers]()
 
-4.  [TF Transform (`tf.Transform`) 和 TF Datasets (TFDS)]()
+4.  [TF Transform (`tf.Transform`)]()
+
+5.  [TensorFlow Datasets (TFDS)](https://nbviewer.jupyter.org/github/libingallin/handson-ml-2nd/blob/master/chap13_load_and_preprocess_data_with_tf/chap13_tensorflow_datasets.ipynb)
