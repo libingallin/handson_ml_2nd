@@ -1,4 +1,4 @@
-<center><b>Scikit-Learn 设计原则</b></center>
+<p align="center"><b>Scikit-Learn 设计原则</b></p>
 
 Scikit-Learn 的 API 设计得非常好 (remarkably well designed)。下面是主要的设计原则 (design principles)：
 
@@ -13,7 +13,7 @@ Scikit-Learn 的 API 设计得非常好 (remarkably well designed)。下面是�
 
   - **Transformer**
 
-    一些 Estimator（如 `SimpleImputer`）也可以用来转换数据，这称之为 **transformers**。API 也很简单：转换 (transformation) 动作由 `transform()` 完成，将需要转换的数据集作为参数。它返回转换后的数据集（ndarray）。转换通常依赖于学到的参数。所有的 transformers 都有一个便捷方方法 `fit_transform()`——相当于先使用 `fit()` 再使用 `transform()`，但有时 `fit_transform()` 经过了优化，运行速度更快。
+    一些 estimator（如 `SimpleImputer`）也可以用来转换数据，这称之为 **transformer**。API 也很简单：转换 (transformation) 动作由 `transform()` 完成，将需要转换的数据集作为参数。它返回转换后的数据集（ndarray）。转换的过程通常依赖于学到的参数。所有的 transformer 都有一个便捷方法 `fit_transform()`——相当于先使用 `fit()` 再使用 `transform()`，但有时 `fit_transform()` 经过了优化，运行速度更快。
 
   - **Predictor**
 
