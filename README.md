@@ -15,7 +15,7 @@ About the book:
 ### I. The Fundamentals of Machine Learning
 
 01. [The Machine Learning Landscape](https://github.com/libingallin/hands-on-machine-learning-with-scikit-learn-keras-tensorflow-2nd/blob/master/chap01-the-machine-learning-landscape.md)
-02. [End-to-end Machine Learning Project](/libin://nbviewer.jupyter.org/github/libingallin/handson-ml-2nd/blob/master/chap02_end_to_end_ml_project/chap02_end_to_end_ml_project_cn.ipynb)
+02. [End-to-end Machine Learning Project](https://nbviewer.jupyter.org/github/libingallin/handson-ml-2nd/blob/master/chap02_end_to_end_ml_project/chap02_end_to_end_ml_project_cn.ipynb)
 03. [Classification](https://nbviewer.jupyter.org/github/libingallin/handson-ml-2nd/blob/master/chap03_classification/chap03_classification_cn.ipynb)
 04. Training Models
 05. Support Vector Machines
