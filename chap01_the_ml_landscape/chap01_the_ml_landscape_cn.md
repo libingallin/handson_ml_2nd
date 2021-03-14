@@ -2,11 +2,11 @@
 
 1. [机器学习的定义](#1-什么是机器学习)
 2. [为什么使用机器学习](#2-为什么使用机器学习)
-3. [机器学习的应用实例](#3-ML-应用实例)
+3. [机器学习的应用实例](#3-ml-应用实例)
 4. [机器学习的种类](#4-机器学习系统的种类)
     -   [监督学习和无监督学习](#41-监督学习和无监督学习)
         -   [监督学习](#411-监督学习supervised-learning)
-        -   [无监督学习](#412-无监督学习unsupervised-learning)
+        -   [无监督学习](#412-无监督学习unspervised-leraning)
         -   [半监督学习](#413-半监督学习semi-supervised-learning)
         -   [强化学习](#414-强化学习reinforcement-learning)
     -   [批量学习和在线学习](#42-批量学习batch-learning和在线学习online-learning)
@@ -29,6 +29,7 @@
     -   [数据不匹配](#62-数据不匹配data-mismatch)
 
 <br>
+
 
 # 1. 什么是机器学习？
 
@@ -66,7 +67,6 @@
 ![机器学习编程](chap01_figs/ml_program.png)
 <p align="center"><i>机器学习方法</i></p>
 
-
 ![机器学习可以自动适应变化](chap01_figs/ml_automatically_adapting_to_change.png)
 <p align="center"><i>机器学习可以自动适应变化</i></p>
 
@@ -97,6 +97,7 @@
 
 <br>
 
+
 # 4. 机器学习系统的种类
 
 ML 有很多类型，基于以下 criteria 可以将他们大致分类（classify them in broad categories）：
@@ -109,9 +110,13 @@ ML 有很多类型，基于以下 criteria 可以将他们大致分类（classif
 
 <br>
 
+
 ## 4.1 监督学习和无监督学习
 
 根据训练期间接受到的监督数量和类型（the amount and type of supervision）可以分为四大类——监督学习、无监督学习、半监督学习和强化学习。
+
+<br>
+
 
 ### 4.1.1 监督学习（Supervised Learning）
 
@@ -123,12 +128,10 @@ ML 有很多类型，基于以下 criteria 可以将他们大致分类（classif
 一些回归算法也可以用于分类任务，反之亦然（vice versa）。如，逻辑回归（Logistic Regression）通常用于分类，因为它可以输出「属于某个 class 的概率」（20% 的概率是垃圾邮件）。
 
 ![分类](chap01_figs/supervised_learning_example.png)
-<center><i>监督学习-分类</i></center>
+<p align="center"><i>ML帮助监督学习-分类人类学习</i></p>
 
 
-
->   在 ML 中，**属性（attribute）**是一种数据类型（data type），如里程（mileage）；**特征（feature）**可能有多种含义（meanings），这取决于上下文（context）。但是，通常情况下，*特征*意味着*属性*加上对应的值（如，里程=500）。**可交替（interchangeably）使用这两个词。**
-
+>   在 ML 中，**属性（attribute）** 是一种数据类型（data type），如里程（mileage）；**特征（feature）** 可能有多种含义（meanings），这取决于上下文（context）。但是，通常情况下，*特征*意味着*属性*加上对应的值（如，里程=500）。**可交替（interchangeably）使用这两个词。**
 
 
 后续会介绍一些监督学习算法：
@@ -140,6 +143,7 @@ ML 有很多类型，基于以下 criteria 可以将他们大致分类（classif
 -   决策树（Decision Trees）和随机森林（Random Forests）
 -   神经网络（Neural Networks）
 
+<br>
 
 
 ### 4.1.2 无监督学习（Unspervised Leraning）
@@ -147,7 +151,7 @@ ML 有很多类型，基于以下 criteria 可以将他们大致分类（classif
 所有的数据都是未标记的（unlabeled）。
 
 ![无监督学习数据集](chap01_figs/dataset_for_unsupervised_learning.png)
-<center><i>无监督学习的数据集</i></center>
+<p align="center"><i>无监督学习的数据集</i></p>
 
 
 这里介绍一些重要的无监督学习算法：
@@ -168,7 +172,7 @@ ML 有很多类型，基于以下 criteria 可以将他们大致分类（classif
     -   Apriori
     -   Eclat
 
-
+<br>
 
 **Notes:**
 
@@ -184,6 +188,7 @@ ML 有很多类型，基于以下 criteria 可以将他们大致分类（classif
 6.  例子：如果有成千上万张狗的照片，其中 1% 是吉娃娃（Chihuahuas），那么 novelty detection 算法不会将新的吉娃娃照片作为 novelties。然后，anomaly detection 算法认为吉娃娃的照片太少了，和其他狗不一样，所以认为是 anomalies。
 7.  **Association rule learning**：目的是通过挖掘大量数据来发现属性（attributes）之间的有趣联系。如说烂的啤酒和尿布。
 
+<br>
 
 
 ### 4.1.3 半监督学习（Semi-supervised Learning）
@@ -193,8 +198,9 @@ ML 有很多类型，基于以下 criteria 可以将他们大致分类（classif
 大多数半监督学习算法是监督学习算法和非监督学习算法的结合。如，深度置信网络（Deep Belief Networks, DBNs）。
 
 ![半监督学习](chap01_figs/supervised_learning_example.png)
-<center><i>半监督学习有 2 个类别（三角形和正方形）：未标记的类别（圆形）有助于将新样本（十字形）分类成三角形而不是正方形，即时新样本更接近于正方形</i></center>
+<p align="center"><i>半监督学习有 2 个类别（三角形和正方形）：未标记的类别（圆形）有助于将新样本（十字形）分类成三角形而不是正方形，即时新样本更接近于正方形</i></p>
 
+<br>
 
 
 ### 4.1.4 强化学习（Reinforcement Learning）
@@ -204,13 +210,16 @@ ML 有很多类型，基于以下 criteria 可以将他们大致分类（classif
 如，AlapaGo。
 
 ![强化学习](chap01_figs/reinforcement_learning.png)
-<center><i>强化学习</i></center>
+<p align="center"><i>强化学习</i></p>
 
 <br>
+
 
 ## 4.2 批量学习（Batch Learning）和在线学习（Online Learning）
 
 是否可以从源源不断的输入数据（a stream of incoming data）中逐渐/增量（incrementally）学习，也是 ML 系统分类的一个标准（criterion）。
+
+<br>
 
 
 ### 4.2.1 批量学习（Batch Learning）
@@ -228,6 +237,7 @@ ML 有很多类型，基于以下 criteria 可以将他们大致分类（classif
 
 这时，需要能够在进行增量学习（learning incrementally）的算法。
 
+<br>
 
 
 ### 4.2.2 在线学习（Offline Learning）
@@ -237,7 +247,7 @@ ML 有很多类型，基于以下 criteria 可以将他们大致分类（classif
 ![在线学习](chap01_figs/online_learning.png)
 <p align="center"><i>在线学习</i></p>
 
-
+<br>
 
 **「在线学习」的使用场景：**
 
@@ -247,9 +257,9 @@ ML 有很多类型，基于以下 criteria 可以将他们大致分类（classif
 
 >   **out-of-core learning** 通常是线下完成的（不是实时系统），所以在线学习容易误解。将其视为「增量学习」。
 
+<br>
 
-
-**可能存在的问题：**
+**在线学习可能存在的问题：**
 
 -   「在线学习系统」的一个重要参数是适应新数据的速度，即学习率（learning rate）。如果「学习率」过高，系统会迅速适应新数据，但是这样也会很快忘记旧数据；如果「学习率」过低，系统就会有惰性（inertia），新数据的学习比较缓慢，同时会对新数据中的噪声（noise）或无表示性数据（non-representative data）不够敏感。
 
@@ -260,13 +270,17 @@ ML 有很多类型，基于以下 criteria 可以将他们大致分类（classif
 
     此时，需要密切监控系统，一旦检测到系统性能下降，要及时中断新数据的学习（switch learning off），可能还需要恢复到之前的版本。还需要密切监控输入数据，并对异常数据作出反应。
 
-<Br>
+<br>
+
 
 ## 4.3 基于实例的学习（Instance-Based Learning）和基于模型的学习（Model-Based Learning）
 
 另一种对 ML 系统进行分类的方法是看他们如何泛化（generalize）。
 
 泛化（generalization）主要有以下 2 种方法。
+
+<br>
+
 
 ### 4.3.1 基于实例的学习（Instanced-Based Learning）
 
@@ -277,6 +291,7 @@ ML 系统记住样本（learn samples by heart），然后在泛化的时候，�
 ![基于样本的学习](chap01_figs/instance_based_learning.png)
 <p align="center"><i>Instanced-based learning</i></p>
 
+<br>
 
 
 ### 4.3.2 基于模型的学习（Model-Based Learning）
@@ -289,6 +304,7 @@ ML 系统记住样本（learn samples by heart），然后在泛化的时候，�
 
 <br>
 
+
 # 5. ML 的主要挑战
 
 由于主要任务是选择一种算法，并在某些数据上进行训练。因此，最有可能出现问题的不外乎是：
@@ -297,6 +313,7 @@ ML 系统记住样本（learn samples by heart），然后在泛化的时候，�
 -   “坏数据”
 
 <br>
+
 
 ## 5.1 坏数据（Bad Data）
 
@@ -308,6 +325,7 @@ ML 系统记住样本（learn samples by heart），然后在泛化的时候，�
 
 [The Unreasonable Effectiveness of Data, 2009](https://homl.info/7) 指出对于复杂问题，数据比算法更重要。但中小型数据集（samll- and medium-sized datasets）非常普遍，获得额外的训练数据并不便宜，所以暂时不能抛弃算法（abandon algorithm）。
 
+<br>
 
 
 ### 5.1.2 训练数据不具代表性（Non-representative Training Data）
@@ -316,6 +334,7 @@ ML 系统记住样本（learn samples by heart），然后在泛化的时候，�
 
 但说起来容易做起来难，如果训练数据量太小，会出现抽样偏差（sampling noise）（即不具代表性的数据被抽中）。即便是非常大的数据集，如果抽样方法欠妥（flawed）也会出现不具代表性的训练集。这就是所谓的**抽样偏差（sampling bias）**。
 
+<br>
 
 
 ### 5.1.3 数据质量差（Poor-Quality Data）
@@ -327,6 +346,7 @@ ML 系统记住样本（learn samples by heart），然后在泛化的时候，�
 -   舍弃（discard）或者手动修复（fix manually）异常值
 -   如果某些样本的某些特征缺失（如，5% 的顾客没有填写年龄），必须要考虑是忽略这些特征，还是忽略这些样本，亦或是填充确实值（如，用中位数），或者分别训练一个带这个特征和不带这个特征的模型。
 
+<br>
 
 
 ### 5.1.4 无关特征（Irrelevant Features）
@@ -343,6 +363,7 @@ Garbage in, garbage out.
 
 <br>
 
+
 ## 5.2 坏算法（Bad Algorithms）
 
 ### 5.2.1 过拟合（Overfitting）
@@ -351,7 +372,7 @@ Garbage in, garbage out.
 
 诸如 DNNs 这类的复杂模型可以检测到数据中的细节（subtle patterns），但是如果训练集含有噪声，或者太小（会引入了抽样噪声 sample noise），那么很可能会导致模型学到噪声信息。显然，这会影响泛化。
 
-
+<br>
 
 **当模型相对于训练集的 amount 和 noisiness 都过于复杂时，就会导致过拟合。**
 
@@ -361,6 +382,7 @@ Garbage in, garbage out.
 -   获取更多训练数据
 -   减少训练数据中的噪声（如，修复数据错误和移除异常值）
 
+<br>
 
 
 ### 5.2.2 欠拟合（Underfitting）
@@ -378,6 +400,7 @@ Garbage in, garbage out.
 
 <br>
 
+
 # 6. 测试与验证（Testing and Validating）
 
 了解一个模型在新样本上泛化能力的唯一办法是让模型在真实地处理新样本。有以下 2 种方法：
@@ -393,6 +416,7 @@ Garbage in, garbage out.
 
 <br>
 
+
 ## 6.1 调参（Hyperparameter Tuning）和模型选择（Model Selection）
 
 仅仅有训练集和测试集还不够。因为在对比不同超参数的性能时，对测试集的泛化误差进行了多次度量，并调整模型和超参数来得到拟合测试集的最佳模型，这有问题。
@@ -406,13 +430,14 @@ Garbage in, garbage out.
 
 解决这个问题的办法是使用交叉验证（cross- validation）。对所有的评估取平均值，可以更准确地衡量模型性能。但，这比较耗时。
 
+<br>
 
 
 ## 6.2 数据不匹配（Data Mismatch）
 
 某些情况下，虽然很容易获得大量数据，但是这些数据可能不能完全代表生产环境中的数据。
 
-
+<br>
 
 **重要的例子：**
 
@@ -425,9 +450,9 @@ Garbage in, garbage out.
 >   -   如果模型在 train-dev 数据集上表现良好，那么模型不是过拟合训练集了。如果在验证集表行不好，那么问题一定是 data mismatch。此时，可以通过预处理网络图片（使得更像 APP 拍摄的图片）并重新训练模型来解决这个问题。
 >   -   如果模型在 train-dev 数据集上表现不好，那么模型肯定是在训练集上过拟合了。此时，可以尝试简化或者正则化模型，或者获得更多训练数据，并 clean 训练数据。
 
+<br>
 
-
-<center><b>No Free Lunch Theorem</b></center>
+<p align="center"><b>No Free Lunch Theorem</b></p>
 
 模型是观测的简化版本（A model is a simplified version of the observations）。
 
