@@ -26,7 +26,7 @@
         -   [欠拟合](#522-欠拟合underfitting)
 6. [验证与测试](#6-测试与验证testing-and-validating)
     -   [调参与模型选择](#61-调参hyperparameter-tuning和模型选择model-selection)
-    -   [数据不匹配](#62-数据不匹配data-mismatch)
+    -   [数据不匹配](#star2-62-数据不匹配data-mismatch)
 
 <br>
 
@@ -433,7 +433,7 @@ Garbage in, garbage out.
 <br>
 
 
-## 6.2 数据不匹配（Data Mismatch）
+## :star2: 6.2 数据不匹配（Data Mismatch）
 
 某些情况下，虽然很容易获得大量数据，但是这些数据可能不能完全代表生产环境中的数据。
 
