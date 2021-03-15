@@ -458,7 +458,7 @@ Garbage in, garbage out.
 
 这个简化（simplifications）意味着丢弃了那些不大可能泛化到新样本上的多余细节（superfluous details）。但是，决定丢弃哪些数据，保留哪些数据，必须要做出假设（assumptions）。如，线性模型的假设是数据基本上都是线性的，而样本和直线之间的距离都是 noise，可以忽略。
 
-[paper, 1996, David Wolpert](https://homl.info/8)表明，如果你对数据完全不做假设，那么就没有理由偏好（prefer）一个模型而不选择其他模型。这称为 **No Free Lunch (NFL)** 定理。对某些数据集来说，最佳模型是线性模型，然后对其他数据集，最佳模型可能是 NN。没有一种模型可以先验地保证（priori guaranteed）一定 work well，因此得名 NFL。
+[paper, 1996, David Wolpert](https://homl.info/8) 表明，如果你对数据完全不做假设，那么就没有理由偏好（prefer）一个模型而不选择其他模型。这称为 **No Free Lunch (NFL)** 定理。对某些数据集来说，最佳模型是线性模型，然而对其他数据集，最佳模型可能是 NN。没有一种模型可以先验地保证（priori guaranteed）一定 work well，因此得名 NFL。
 
 要知道哪一种模型更好的唯一办法就是对所有模型进行评估，但这是不可能的，因此需要对数据做出一些合理的假设（reasonable assumputions），然后只评估一些合理的模型（reasonable models）。如，对于简单的任务，可能只需要评估几个正则化程度不同的线性模型；对于复杂的问题，可能需要评估多种 NN。
 
